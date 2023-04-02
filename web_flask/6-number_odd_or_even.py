@@ -51,7 +51,7 @@ def number_html(n):
 
 
 @app.route("/number_odd_or_even/<int:n>", strict_slashes=False)
-def number_odd_even(n):
+def number_choice(n):
     if n % 2 == 0:
         string = 'even'
     else:
