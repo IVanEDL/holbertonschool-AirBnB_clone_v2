@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """Here I am, documenting a module.
 starts a web flask app that listens on 0.0.0.0 port 5000
-route /: display "Hello HBNB!" 
-route /hbnb: display "HBNB" 
+route /: display "Hello HBNB!"
+route /hbnb: display "HBNB"
 route /c/<text>: display “C ” followed by the value of the text variable
 (replace underscore _ symbols with a space)"""
 
