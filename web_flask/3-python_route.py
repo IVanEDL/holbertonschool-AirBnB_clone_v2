@@ -5,7 +5,7 @@ route /: display "Hello HBNB!"
 route /hbnb: display "HBNB"
 route /c/<text>: display “C ” followed by the value of the text variable
 (replace underscore _ symbols with a space)
-route /python/<text>: display “Python ”, followed by the value of the text variable
+route /python/<text>: display “Python ”, followed by the value of the text var
 (replace underscore _ symbols with a space) (defaults in 'is cool')"""
 
 from flask import Flask
@@ -30,6 +30,7 @@ def c(text):
     return "C {}".format(text.replace("_", " "))
 
 
+@app.route("/python/", strict_slashes=False)
 @app.route("/python/<text>", strict_slashes=False)
 def python(text="is cool"):
     """returns Python followed by a statement"""
