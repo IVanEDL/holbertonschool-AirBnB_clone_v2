@@ -56,7 +56,7 @@ def number_choice(n):
         string = 'even'
     else:
         string = 'odd'
-    return render_template('5-number_odd_or_even.html', n=n, string=string)
+    return render_template('6-number_odd_or_even.html', n=n, string=string)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
